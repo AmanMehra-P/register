@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Register extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'name',         // Allow 'name' to be mass-assigned
+        'email',
+        'password',
+        'gender',
+        'skill',
+        'address',
+    ];
+}
